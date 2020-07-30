@@ -1,0 +1,7 @@
+.imgNone {
+	display: none;
+}
+
+#imageSelected {
+	max-width: 50%;
+}
