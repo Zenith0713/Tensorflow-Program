@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+    	<meta charset="utf-8" />
+    	<title>Test tensorflow</title>
+    	<link type="text/css" rel="stylesheet" href="./css/stylesheet.css" />
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+	</head>
+
+	<body id="contains">
+		<input id="selectImage" type="file">
+		<button id="buttonPredict">Predict</button>
+
+		<hr>
+
+		<h2>Predictions</h2>
+		<ol id="predictionList"></ol>
+
+		<div class="progressBar"></div>
+		<hr>
+
+		<h2>Image</h2>
+
+		<img id="imageSelected" class="imgNone" alt="image Selected" src="" />
+
+		<div id="json-upload"></div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+	<script src="./js/imageNet_classes.js"></script>
+	<script src="./js/predict.js"></script>
+
+	</body>
+</html>
